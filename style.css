@@ -3,7 +3,9 @@
       padding: 0;
       font-family: 'Comfortaa', cursive;
     }
-  
+    #div1{
+        display: none;
+      }
   html{
     scroll-behavior: smooth;
 }
@@ -25,7 +27,6 @@
  h2 {
   margin-top: 0; /* Убираем отступ сверху */
  }
-
  p{
  text-indent: 5%; 
 }
@@ -37,23 +38,18 @@ input{
     border-radius: 5px;
     border-width: 2px;
 }
-/* input[type="text"]{
-    /* padding-left: 7px; */
-} */
   img {
   margin-left: 17%;
   border-radius: 15px;
   width: 120px;
   height: 360px;
   }
-
   video{
   margin-left: 17%;
   border-radius: 15px;
   width: 720px;
   height: 360px;
   }
-
  hr {
   border: none; 
   margin-right: 45px;
@@ -63,7 +59,6 @@ input{
   height: 1px; /* Толщина линии */
   width: 153px;
  }
-
  .page{ /* Видимость страницы */
      min-height: 100vh;
  }
@@ -196,7 +191,7 @@ input{
     content: "";
     width: 50px;
     height: 50px;
-    border: 6px solid #BFE2FF;
+    border: 6px solid black;
     border-radius: 12px;
     position: absolute;
     z-index: 10;
@@ -204,11 +199,16 @@ input{
     right: 20px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23337AB7' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3e%3cline x1='18' y1='6' x2='6' y2='18'%3e%3c/line%3e%3cline x1='6' y1='6' x2='18' y2='18'%3e%3c/line%3e%3c/svg%3e");
-    background-color: #FFF;
+    background-color: black;
     background-size: cover;
     animation: move 0.5s ease;
 }
- 
+/*  */
+  .first {
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+  }
 .button{
     font-size: 12pt;
     width: 210px;
@@ -356,6 +356,6 @@ text-decoration:none;
 }
 
 .modal{
-    margin-top: 15px;
+    /* margin-right: 150px; */
 }
 
