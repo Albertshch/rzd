@@ -1,9 +1,7 @@
-$(function () {
-    $('#callback-button').click(function () {
-      $('.modal').addClass('modal_active');
-    });
-   
-    $('.modal__close-button').click(function () {
-      $('.modal').removeClass('modal_active');
-    });
-  });
+// function show_modal() {
+//     document.querySelector('[data-target="#exampleModal"]').click();
+//   }
+
+function viewDiv(){
+    document.getElementById("div1").style.display = "block";
+  };
