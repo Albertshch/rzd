@@ -1,5 +1,5 @@
 body {
-    background-image: url('img/bc.jpg');
+    background-image: url('img/bc2.jpg');
     background-size: cover;
 }
 img{
@@ -9,3 +9,6 @@ img{
 #div1{
     display: none;
   }
+.registr{
+    font-size: 8pt;
+}
