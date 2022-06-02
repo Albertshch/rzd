@@ -42,25 +42,36 @@
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="exampleModalLabel1">Регистрация.</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel1">Вход</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Закрыть"></button>
                                     </div>
+
+
+                                    <!-- ФОРМА РЕГИСТРАЦИИ -->
                                     <div class="modal-body">
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Email"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Password"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <a class="forgot-pass" href="/">Забыли пароль?</a>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Закрыть</button>
-                                        <button type="button" class="btn btn-primary">Войти</button>
+
+
+                                        <form action="validation-form/auth.php" method="post">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Email"
+                                                    aria-label="Username" aria-describedby="basic-addon1" name="login"
+                                                    id="login">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                    aria-label="Username" aria-describedby="basic-addon1" name="pass"
+                                                    id="pass">
+                                            </div>
+                                            <a class="forgot-pass" href="/">Забыли пароль?</a>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Закрыть</button>
+                                                <button type="submit" class="btn btn-success">Войти</button>
+                                            </div>
+                                        </form>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -81,36 +92,46 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Закрыть"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text" id="basic-addon1">@</span>
-                                            <input type="text" class="form-control" placeholder="First name"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Last name"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="text" class="form-control" placeholder="Email"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                            <span class="input-group-text" id="basic-addon1">@gmail.com</span>
-                                        </div>
 
-                                        <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="Password"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
-                                        <div class="input-group mb-3">
-                                            <input type="password" class="form-control" placeholder="*Confirm password"
-                                                aria-label="Username" aria-describedby="basic-addon1">
-                                        </div>
+                                    <!-- ФОРМА РЕГИСТРАЦИИ -->
+                                    <div class="modal-body">
+
+                                        <form action="validation-form/regist.php" method="post">
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="First name"
+                                                    aria-label="Username" aria-describedby="basic-addon1"
+                                                    name="first name" id="first name">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Last name"
+                                                    aria-label="Username" aria-describedby="basic-addon1"
+                                                    name="last name" id="last name">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="Email"
+                                                    aria-label="Username" aria-describedby="basic-addon1" name="login"
+                                                    id="login">
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control" placeholder="Password"
+                                                    aria-label="Username" aria-describedby="basic-addon1" name="pass1"
+                                                    id="pass1">
+                                            </div>
+                                            <div class="input-group mb-3">
+                                                <input type="password" class="form-control"
+                                                    placeholder="*Confirm password" aria-label="Username"
+                                                    aria-describedby="basic-addon1" name="pass2" id="pass2">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Закрыть</button>
+                                                <button type="submit" class="btn btn-success">Создать
+                                                    пользователя</button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary"
-                                            data-bs-dismiss="modal">Закрыть</button>
-                                        <button type="button" class="btn btn-primary">Создать пользователя</button>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -138,15 +159,15 @@
                                             <div class="col-1"></div>
                                             <div class="col-5">
 
-                                                <input type="password" class="form-control" placeholder="CVC" maxlength="3"
-                                                    aria-label="Username" aria-describedby="basic-addon1">
+                                                <input type="password" class="form-control" placeholder="CVC"
+                                                    maxlength="3" aria-label="Username" aria-describedby="basic-addon1">
                                             </div>
                                         </div>
                                         <input type="button" class="rounded text-dark p-2" value="Забронировать билет"
                                             onmousedown="viewDiv2()">
-                                            <div id="div2">
-                                                <a href="tel:123123123">т.8800800088</a>
-                                            </div>
+                                        <div id="div2">
+                                            <a href="tel:123123123">т.8800800088</a>
+                                        </div>
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"
