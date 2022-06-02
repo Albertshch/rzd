@@ -7,9 +7,4 @@ function viewDiv(){
   };
 
 
-  function viewDiv2(){
-    document.getElementById("div2").style.display = "block";
-  };
-
-
   
