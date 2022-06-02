@@ -9,35 +9,18 @@ img{
 #div1{
     display: none;
   }
+  #div2{
+      display: none;
+  }
 .registr{
     font-size: 12pt;
 }
 
 .search{
     opacity: 0.95;
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.search-form{
-    background: #fff;
-    height: 80px;
-    border-radius: 7px;
-}
 
-.col-3{
-    margin-top: 16px;
-}
-
-.col-2{
-    margin-top: 16px;
-    font-size: 12pt;
-}
-
-.container{
-    margin-top: 2%;
-}
 .form-control{
     font-size: 16pt;
 }
