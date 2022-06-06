@@ -2,6 +2,7 @@ body {
     background-image: url('img/bc2.jpg');
     background-size: cover;
 }
+
 img{
     height: 60px;
 }
@@ -12,6 +13,7 @@ img{
   #div2{
       display: none;
   }
+ 
 .registr{
     font-size: 12pt;
 }
@@ -20,7 +22,20 @@ img{
     opacity: 0.95;
 }
 
-
 .form-control{
     font-size: 16pt;
+}
+.timetable-glav{
+    font-weight: bold;
+}
+
+table{
+    font-size: 16pt;
+}
+.bottiu{
+    font-size: 14pt ;
+}
+
+.number{
+    font-size: 13pt;
 }
