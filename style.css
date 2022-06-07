@@ -2,6 +2,9 @@ body {
     background-image: url('img/bc2.jpg');
     background-size: cover;
 }
+a{
+    text-decoration: none;
+}
 
 img{
     height: 60px;
@@ -38,4 +41,7 @@ table{
 
 .number{
     font-size: 13pt;
+}
+.asd{
+    font-weight: bold;
 }
