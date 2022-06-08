@@ -32,7 +32,41 @@
                     <!-- ТО ЧТО ПОЯВЛЯЕТСЯ ПРИ НАЖАТИИ КНОПКИ РЕГИСТРАЦИИ -->
                     <div id="other" style="display:none" class="slider-click">
                         <p class="name-user">Музолев Иван И.</p>
+                        p.
                     </div>
+
+
+<!-- ОПЛАТА УСПЕШНА -->
+
+                    <div class="modal fade" id="exampleModal5" tabindex="-1"
+                    aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">Оплата</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="validation-form/auth.php" method="post">
+                                    <div class="input-group mb-3">
+                                        <p class="h5">Оплата успешна!</p>
+                                    </div>
+                                    <a class="forgot-pass" href="tel:89281374382">Обратиться за помощью</a>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+<!-- ///////////////////////////////////////////// -->
+
+
+
 
                     <!---------------------- ВХОД И РЕГИСТРАЦИЯ ---------------------->
                     <div id="slider">
@@ -86,6 +120,17 @@
                                     </div>
                                 </div>
                             </div>
+
+
+
+
+
+
+                            
+
+
+
+
 
                             <!-- <div id="slider"> -->
                             <div class="col-2 mt-2">
@@ -196,7 +241,13 @@
                                     <div class="modal-footer ">
                                         <button type="button" class="btn btn-secondary"
                                             data-bs-dismiss="modal">Закрыть</button>
-                                        <button type="button" class="btn btn-primary">Оплата</button>
+
+                                        <!-- ПРИ НАЖАТИИ ПОКАЗЫВАЕТ ОПЛАЧЕНО -->
+
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#exampleModal5">Оплата</button>
+
+                                        
+
                                     </div>
 
 
