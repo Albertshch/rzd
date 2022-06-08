@@ -29,8 +29,10 @@
 
                     </div>
 
-                    <!-- ТО ЧТО ПОЯАЛЯЕТСЯ ПРИ НАЖАТИИ КНОПКИ РЕГИСТРАЦИИ -->
-                    <div id="other" style="display:none" class="bg-dark">Другой</div>
+                    <!-- ТО ЧТО ПОЯВЛЯЕТСЯ ПРИ НАЖАТИИ КНОПКИ РЕГИСТРАЦИИ -->
+                    <div id="other" style="display:none" class="slider-click">
+                        <p class="name-user">Музолев Иван И.</p>
+                    </div>
 
                     <!---------------------- ВХОД И РЕГИСТРАЦИЯ ---------------------->
                     <div id="slider">
@@ -41,6 +43,9 @@
                                     data-bs-target="#exampleModal1">
                                     Вход
                                 </button>
+
+
+                                
                             </div>
                             <div class="modal fade" id="exampleModal1" tabindex="-1"
                                 aria-labelledby="exampleModalLabel1" aria-hidden="true">
@@ -69,7 +74,12 @@
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Закрыть</button>
-                                                    <button type="submit" class="btn btn-primary">Войти</button>
+
+
+
+                                                        
+                                                        <input type="button" class="btn btn-success" value="Войти" data-bs-dismiss="modal"
+                                                        onclick="hideshow();" />
                                                 </div>
                                             </form>
                                         </div>
@@ -129,21 +139,12 @@
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary"
                                                         data-bs-dismiss="modal">Закрыть</button>
-                                                    <!-- <button type="submit" class="btn btn-primary">Создать
-                                                    пользователя</button> -->
-
-                                                    <input type="button" value="Кнопка" data-bs-dismiss="modal"
+                                                    <input type="button" class="btn btn-success" value="Зарегистрироваться" data-bs-dismiss="modal"
                                                         onclick="hideshow();" />
                                                 </div>
                                         </div>
                                         </form>
                                     </div>
-
-
-
-
-
-
                                 </div>
                             </div>
                         </div>
@@ -217,6 +218,7 @@
         <div class="row"></div>
         <div class="search bg-light mt-5 p-4 br-5 rounded">
             <div class="search-form">
+                <div class="container">
                 <div class="row">
                     <div class="col-md-4">
                         <!---------------------- подсказки по id ---------------------->
@@ -235,13 +237,14 @@
                     </div>
 
                     <div class="col-md-2">
-                        <input type="date" min="2022-06-07" class="form-control w-100 p-3">
+                        <input type="date" min="2022-06-07" class="form-control p-3">
                     </div>
                     <div class="col-md-2">
-                        <input type="button" class="rounded text-dark btn-outline-info p-2 h-100"
+                        <input type="button" class="rounded text-dark btn-outline-info h-100"
                             value="Посмотреть расписание" onmousedown="viewDiv()">
                     </div>
                 </div>
+            </div>
             </div>
 
 
