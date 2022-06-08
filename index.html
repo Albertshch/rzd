@@ -25,7 +25,7 @@
                 <div class="container-fluid ">
                     <a class="navbar-brand"><img src="/img/2logo.png" alt="/"></a>
                     <div class="logo-text ">
-                        <p class="logo-name-text h3">Веб-сервис обеспечения загрузки <br> пригородного ЖД-транспорта</p>
+                        <p class="logo-name-text h3">Веб-сервис обеспечения загрузки <br> пригородного ЖД транспорта</p>
 
                     </div>
 
@@ -34,7 +34,7 @@
                         <p class="name-user">Музолев Иван И.</p>
                         <td><a href="/" data-bs-toggle="modal" data-bs-target="#exampleModa7">Личный кабинет</a></td>
                     </div>
-
+<!-- /////////////////////////////////// -->
                     <!-- PERSONAL ACCAUNT -->
                     <div class="modal fade" id="exampleModa7" tabindex="-1" aria-labelledby="exampleModalLabel1"
                         aria-hidden="true">
@@ -89,7 +89,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
                                         <a class="forgot-pass" href="tel:89281374382">Техническая поддержка...</a>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary"
@@ -130,9 +129,32 @@
                     </div>
 
                     <!-- ///////////////////////////////////////////// -->
-
-
-
+<!-- РЕГИСТРАЦИЯ УСПЕШНА -->
+                    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel1">Регистрация</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Закрыть"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form action="validation-form/auth.php" method="post">
+                                    <div class="input-group mb-3">
+                                        <p class="h5 text-success my-3 mx-3">Регистрация прошла успешно!</p>
+                                    </div>
+                                    <a class="forgot-pass" href="tel:89281374382">Обратиться за помощью</a>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary"
+                                            data-bs-dismiss="modal">Закрыть</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- ///////////////////////////////// -->
 
                     <!---------------------- ВХОД И РЕГИСТРАЦИЯ ---------------------->
                     <div id="slider">
@@ -243,7 +265,7 @@
                                                         data-bs-dismiss="modal">Закрыть</button>
                                                     <input type="button" class="btn btn-success"
                                                         value="Зарегистрироваться" data-bs-dismiss="modal"
-                                                        onclick="hideshow();" />
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal6">
                                                 </div>
                                         </div>
                                         </form>
